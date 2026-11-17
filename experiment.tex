@@ -1,6 +1,6 @@
 \documentclass[paper=a4, fontsize=10bp]{jlreq}
 \usepackage{amsmath, amssymb}
-\usepackage{unicode-math}
+\usepackage[math-style=TeX]{unicode-math}
 % 式番号を (セクション番号.式番号) にする設定
 \numberwithin{equation}{section}
 \usepackage[margin=30truemm]{geometry}
@@ -13,7 +13,7 @@
 \captionsetup{labelsep=zenspace, font=ninehalf}
 \usepackage{luatexja-fontspec}
 \setmainfont{TeX Gyre Termes}
-\setmathfont{TeX Gyre Termes Math}
+\setmathfont{STIX Two Math}
 \setsansfont{Arial}
 \usepackage[haranoaji, deluxe, ja-alnum]{luatexja-preset}
 \ModifyHeading{section}{font={\sffamily\bfseries\normalsize}, before_space=20bp, after_space=10bp}
@@ -51,6 +51,7 @@
 % 図の参照を「図3.1」の形で自動化するショートカット
 \newcommand{\figref}[1]{図\ref{#1}}
 \newcommand{\tabref}[1]{表\ref{#1}}
+\newcommand{\eqref}[1]{式(\ref{#1})}
 % ===== Memo ==================================
 % \setcounter{section}{2}
 % :: カウンターを直接設定する
